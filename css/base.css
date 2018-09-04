@@ -1,0 +1,309 @@
+/* BASE */
+
+html {
+  font-size: 87.5%;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #FDFFB7;
+  min-width: 18rem;
+  color: #3E3A5F;
+  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* TYPE */
+
+h1, h2 {
+	font-family: "Giorgio Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  line-height: 0.8;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: .9rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+ul {
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3E3A5F;
+  transition: opacity .15s ease-in;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.6;
+  transition: opacity .15s ease-in;
+}
+
+a:active {
+  opacity: 0.8;
+  transition: opacity .15s ease-out;
+}
+
+/* PAGE */
+
+.page {
+  padding: 2.5rem 1rem;
+  max-width: 27rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* LOGO */
+
+.logo {
+  width: 6rem;
+  height: 3.75rem;
+  margin: 0 0 2.5rem;
+}
+
+/* HEADLINE */
+
+.headline {
+  max-width: 22rem;
+}
+
+/* PHOTO */
+
+.photo {
+  margin: 1rem 0 1.5rem;
+  max-width: 27rem;
+}
+
+.photo-aspect {
+  height: 0;
+  position: relative;
+  padding-bottom: 80%;
+}
+
+.photo-object {
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/headshot-2016-bw-square.jpg);
+}
+
+.photo-credit {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  font-size: .625rem;
+  text-transform: uppercase;
+  opacity: 0.6;
+  text-align: right;
+}
+
+.photo-credit cite,
+.photo-credit a {
+  font-style: normal;
+  font-weight: 400;
+}
+
+@supports (mix-blend-mode: lighten) {
+  .photo-object:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-filter: contrast(1.3);
+    filter: contrast(1.3);
+    mix-blend-mode: lighten;
+    background-color: #433D65;
+  }
+}
+
+/* BIO */
+
+.bio {
+  max-width: 27rem;
+}
+
+/* LINKS */
+
+.links-writing,
+.links-interviews {
+  display: inline-block;
+  padding-right: 5vw;
+}
+
+.links-contact a {
+  font-weight: 300;
+}
+
+/* NOT SMALL */
+
+@media (min-width: 24em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 40rem) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .page {
+    padding: 4rem;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page:after,
+  .text:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .headline {
+    max-width: 38rem;
+  }
+
+  .bio {
+    float: left;
+    width: 45%;
+  }
+
+  .photo {
+    float: right;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .photo-aspect {
+    padding-bottom: 58%;
+  }
+
+  .links {
+    float: right;
+    width: 50%;
+  }
+
+  .links-writing {
+    padding-right: 1rem;
+  }
+
+  .links-interviews {
+    padding-right: 0;
+  }
+}
+
+/* LARGE */
+
+@media screen and (min-width: 80rem) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .page {
+    max-width: 80rem;
+    padding: 5rem;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 5rem;
+  }
+
+  .headline {
+    max-width: 64rem;
+  }
+
+  .photo {
+    width: 25rem;
+    float: left;
+    padding-right: 4rem;
+  }
+
+  .photo-aspect {
+    padding-bottom: 100%;
+  }
+
+  .photo-credit {
+    text-align: left;
+  }
+
+  .bio {
+    padding-right: 4rem;
+    max-width: none;
+  }
+
+  .links {
+    width: 12rem;
+    float: left;
+  }
+
+  .links-writing,
+  .links-interviews {
+    padding-right: 0;
+  }
+}
+
+/* LARGE & TALL */
+
+@media screen and (min-width: 56rem) and (min-height: 56rem) {
+  .text {
+    position: absolute;
+    bottom: 5rem;
+    max-width: 70rem;
+  }
+}
+
+/* WRAP FIX */
+
+@media screen and (min-width: 40rem) and (max-width: 43rem) {
+  .wrapfix {
+    white-space: nowrap;
+  }
+}
