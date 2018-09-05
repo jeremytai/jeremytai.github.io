@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Maison Neue";
-  src: url('/fonts/MaisonNeue-Book.woff') format('woff');
+  font-family: "Whitney";
+  src: url('/fonts/Whitney-Book.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Maison Neue";
-  src: url('/fonts/MaisonNeue-Demi.woff') format('woff');
+  font-family: "Whitney";
+  src: url('/fonts/Whitney-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Giorgio Sans";
-  src: url('/fonts/GiorgioSans-Black.woff') format('woff');
+  font-family: "Gotham Bold";
+  src: url('/fonts/Gotham-Bold.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
