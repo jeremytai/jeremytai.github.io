@@ -14,7 +14,7 @@ body {
   background: #45bdea;
   min-width: 18rem;
   color: #3E3A5F;
-  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Whitney Book", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
@@ -24,7 +24,7 @@ body {
 /* TYPE */
 
 h1, h2 {
-	font-family: "Giorgio Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: "Gotham Bold", -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: uppercase;
   line-height: 0.8;
   font-weight: 900;
