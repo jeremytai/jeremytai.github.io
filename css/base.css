@@ -98,6 +98,18 @@ a:active {
   max-width: 22rem;
 }
 
+.headline-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bear-image {
+  height: 3rem;
+  width: auto;
+  flex-shrink: 0;
+}
+
 /* PHOTO */
 
 .photo {
@@ -210,6 +222,10 @@ a:active {
     max-width: 38rem;
   }
 
+  .bear-image {
+    height: 4rem;
+  }
+
   .bio {
     float: left;
     width: 45%;
@@ -258,6 +274,10 @@ a:active {
 
   .headline {
     max-width: 64rem;
+  }
+
+  .bear-image {
+    height: 6rem;
   }
 
   .photo {
