@@ -108,6 +108,7 @@ a:active {
   height: 3rem;
   width: auto;
   flex-shrink: 0;
+  visibility: hidden;
 }
 
 /* PHOTO */
